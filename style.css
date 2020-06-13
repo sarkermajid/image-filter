@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: sans-serif;
+}
+.main {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+.main .filterbox {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.main .filterbox h1{
+    position: relative;
+    height: auto;
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.main .filterbox ul {
+    position: relative;
+    margin: 3%;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.main .filterbox ul li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.main .filterbox ul li a {
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid red;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.main .filterbox ul li a:hover,
+.main .filterbox ul li a.active{
+    color: aqua;
+    background-color: black;
+}
+.main .filterbox .imgbox {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .filterbox .imgbox img {
+    width: calc(100% / 3);
+    height: 300px;
+}
